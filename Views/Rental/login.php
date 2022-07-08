@@ -1,31 +1,3 @@
-<!-- <?php
-include 'koneksi.php';
- 
-error_reporting(0);
- 
-session_start();
-
-if (isset($_SESSION['username'])) {
-    header("Location: login.php");
-}
- 
-if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password = md5($_POST['password']);
- 
-    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-    $result = mysqli_query($conn, $sql);
-    if ($result->num_rows > 0) {
-        $row = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $row['username'];
-        $_SESSION['role'] = "admin";
-        header("Location: login.php");
-    } else {
-        echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
-    }
-}
-?> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,10 +83,6 @@ if (isset($_POST['submit'])) {
 </style>
 </head>
 <body>
-    <div class="alert alert-warning" role="alert">
-        <?php echo $_SESSION['error']?>
-    </div>
-
     <div class="previous">
         <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
@@ -132,7 +100,6 @@ if (isset($_POST['submit'])) {
                 <div class="signin-content">
                     <br/>
                     <div class="signin-form">
-                        <?php require_once('Login2.php')?>
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <p>Username</p>
