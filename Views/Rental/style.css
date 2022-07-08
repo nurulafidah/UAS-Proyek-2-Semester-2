@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: gold;
+    background-size: 500px;
+}
+
+#wrapper{
+    width: 50em;
+    margin-top: 170px;
+    margin-left: 310px;
+    background-color: rgb(6, 69, 71);
+    padding:20px;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+#kolom{
+    padding: 10px;
+    border-style: solid;
+    border-color: darkcyan;
+    margin: 15px;
+    
+}
+
+.hitung{
+    margin: 30px;
+    color: white;
+    background-color: darkcyan;
+    width: 120px;
+    height: 25px;
+    border: none;
+
+}
+
+.input{
+    background-color: rgb(226, 247, 229);
+    margin: 30px;
+    border-color:darkcyan ;
+    width: 300px;
+    height: 25px;
+    color: black;
+    padding: 5px;
+  
+}
+
+.kurs{
+    color: rgb(255, 255, 255);
+    background-color: rgb(6, 54, 54);
+    border-color: darkcyan;
+    border-radius: 10px;
+    width: 120px;
+    height: 25px;
+}
+
+.IDR{
+    background-color: seagreen;
+    color: white;
+    width: 300px;
+    height: 35px;
+    margin-left: 180px;
+    margin-bottom: 30px;
+    padding: 15px;
+    font-size: 25px;
+}

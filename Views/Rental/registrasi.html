@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>RENTCARS</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+<link rel="stylesheet" href="style.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    #wrapper{
+        width: 50em;
+        margin-top: 30px;
+        margin-left: 280px;
+        background-color: #f8ca11;
+        padding: 20px;
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+    }
+
+    #kolom{
+        padding: 10px;
+        border-style: solid;
+        border-color: white;
+        margin: 15px;
+        
+    }
+
+    .hitung{
+        margin: 30px;
+        color: #f8ca11;
+        background-color: white;
+        width: 120px;
+        height: 25px;
+        border: none;
+
+    }
+
+    .kurs{
+    color: #f8ca11;
+    background-color: white;
+    border-color: white;
+    border-radius: 10px;
+    width: 120px;
+    height: 25px;
+    }
+
+    /* #username,#password{
+        margin: 1em;
+    } */
+    
+    .previous{
+        margin: 1em;
+    }
+
+    .signup-content{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="previous">
+    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+    </svg></a>
+    <a href="login.html"><img style="width: 70px" src="images/logo3.png"></a>
+</div>
+
+<div id="wrapper">
+    <h1>Sign Up</h1>
+
+    <div id="kolom">
+    <div class="main">
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <form action="" method="POST" class="register-form" id="register-form">
+                        <div class="form-group">
+                            <p>Username</p>
+                            <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input class="kurs" type="text" name="username" id="username" placeholder="Masukkan username"/>
+                        </div>
+                        <div class="form-group">
+                            <p>Email</p>
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input class="kurs" type="email" name="email" id="email" placeholder="Masukkan email"/>
+                        </div>
+                        <div class="form-group">
+                            <p>Password</p>
+                            <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                            <input class="kurs" type="password" name="password" id="password" placeholder="Masukkan password"/>
+                        </div>
+                        <div class="form-group">
+                            <p>Masukkan kembali password</p>
+                            <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input class="kurs" type="password" name="conform_password" id="re_pass" placeholder="Ulangi password"/>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label class="kurs" for="agree-term" class="label-agree-term"><span><span></span></span>Saya menyetujui semua syarat dan ketentuan.</a></label>
+                        </div>
+                        <button class="hitung">Sign Up</button>
+                    </form>
+                </div>
+                <div class="signup-image">
+                    <a href="login.php" class="signup-image-link">I am already member</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+</div>
+
+<script src="<?php echo base_url('assets/vendor/jquery/jquery.min.js')?>"></script>
+<script src="<?php echo base_url('assets/js/main.js')?>"></script>
+</body>
+</html>
